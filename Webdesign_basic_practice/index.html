@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8">
+        <title> 고양이의 일상 </title>
+        <meta name = "description" content = "고양이가 좋아하는 것과 일상을 소개합니다.">
+    </head>
+
+    <body>
+        <h1> 고양이의 하루 </h1>
+        <p> 계속 잠을 잡니다. </p>
+
+        <!-- 제목 -->
+        <h1>가장 큰 제목 출력하기</h1>
+        <h2>2번째로 큰 제목 출력하기</h2>
+        <h3>3번째로 큰 제목 출력하기</h3>
+        <h4>4번째로 큰 제목 출력하기</h4>
+        <h5>5번째로 큰 제목 출력하기</h5>
+        <h6>6번째로 큰 제목 출력하기</h6>
+
+        <!-- 문단 -->
+        <p>몸에 좋은 자연 식품을 제공하는 WCB CAFE입니다.
+        첨가물을 넣지 않은 재료를 사용한 메뉴가 특징입니다.</p>
+        <p>맛있는 블렌드 커피와 건강한 유기농 음식으로 맛과 몸의 건강을 함께 챙기세요.</p>
+
+        <!-- 이미지 삽입 -->
+        <img src = "images/cherry-blossom.jpg" alt = "아름다운 벚꽃">
+
+        <!-- 링크 -->
+        지금 바로 <a href = "https://Google.co.kr">Google</a>에서 검색해보세요!
+
+        <a href = "https://google.co.kr" target = "_blank">
+            <img src = "images/google-logo.png" alt = "구글">
+        </a>
+
+        <a href = "mailto:hugeman@khu.ac.kr" alt = "관리자 메일">문의</a>
+
+        <!-- 리스트 -->
+        <ul>
+            <li>계란 3개</li>
+            <li>간장(2큰술)</li>
+            <li>맛술(1큰술)</li>
+            <li>소금(조금)</li>
+        </ul>
+
+        <ol>
+            <li>계란을 잘 풀고, 조미료를 넣어줍니다.</li>
+            <li>계란말이팬에 잘 풀은 계란을 1/4만큼 조금씩 넣어줍니다.</li>
+            <li>반숙 상태가 되면 젓가락으로 조금씩 안쪽으로 말아줍니다.</li>
+            <li>이를 반복해서 끝까지 잘 구워줍니다.</li>
+        </ol>
+
+        <!-- 표 -->
+        <table border = "1">
+            <tr>
+                <th>플랜 이름</th>
+                <th>요금</th>
+            </tr>
+            <tr>
+                <td>두근두근 플랜</td>
+                <td>월정액 29,000원</td>
+            </tr>
+            <tr>
+                <td>콩닥콩닥 플랜</td>
+                <td>월정액 19,000원</td>
+            </tr>
+        </table>
+
+        <table border = "1">
+            <tr>
+                <th>셀 1</th>
+                <th>셀 2</th>
+            </tr>
+            <tr>
+                <td>셀 3</td>
+                <td>셀 4</td>
+            </tr>
+            <tr>
+                <td>셀 5</td>
+                <td>셀 6</td>
+            </tr>
+        </table>
+
+        <table border = "1">
+            <tr>
+                <th colspan = "2">셀 1+2</th>
+            </tr>
+            <tr>
+                <td>셀 3</td>
+                <td>셀 4</td>
+            </tr>
+            <tr>
+                <td>셀 5</td>
+                <td>셀 6</td>
+            </tr>
+        </table>
+
+        <table border = "1">
+            <tr>
+                <th>셀 1</th>
+                <th>셀 2</th>
+            </tr>
+            <tr>
+                <td rowspan = "2">셀 3+5</td>
+                <td>셀 4</td>
+            </tr>
+            <tr>
+                <td>셀 6</td>
+            </tr>
+        </table>
+
+        <!-- 입력 양식 -->
+        <form action = "example.php" method = "post" name = "contact-form">
+            <!-- 여기에 입력 양식을 넣습니다. -->
+            이름: <input type = "text"><br>
+            이름: <input type = "text" placeholder = "이름"><br>
+            검색: <input type = "search"><br>
+            메일: <input type = "email"><br>
+            연락: <input type = "tel"><br>
+            URL: <input type = "url"><br>
+            <br>
+
+            성별:
+            <input type = "radio" name = "gender" value = "남자" checked> 남자
+            <input type = "radio" name = "gender" value = "여자"> 여자
+            <input type = "radio" name = "gender" value = "그 외"> 그 외
+            <br>
+
+            좋아하는 색
+            <input type = "checkbox" name = "color" value = "붉은색" checked> 붉은색
+            <input type = "checkbox" name = "color" value = "파란색"> 파란색
+            <input type = "checkbox" name = "color" value = "노란색"> 노란색
+            <input type = "checkbox" name = "color" value = "초록색"> 초록색
+            <br>
+
+            <!-- 전송버튼 -->
+            <input type = "submit" value = "전송"><br>
+            <input type = "image" src = "images/button.png" alt = "전송"><br>
+
+            혈액형
+            <select name = "bloodtype">
+                <option value = "A">A</option>
+                <option value = "B">B</option>
+                <option value = "O">O</option>
+                <option value = "AB">AB</option>
+                <option value = "Unknown">Unknown</option>
+            </select>
+            <br>
+
+            <!-- 여러줄 텍스트 입력란 -->
+            <textarea name = "message">메시지 입력</textarea><br>
+            <textarea name = "message" placeholder = "메시지입력"></textarea><br>
+
+            <!-- label 입력 양식 -->
+            <input type = "checkbox" name = "travel" value = "국내" id = "korea">
+            <label for = "korea">국내</label>
+
+            <input type = "checkbox" name = "travel" value = "유럽" id = "europe">
+            <label for = "europe">유럽</label>
+
+            <input type = "checkbox" name = "travel" value = "동남아시아" id = "asia">
+            <label for = "asia">동남아시아</label>
+
+        </form>
+    </body>
+</html>

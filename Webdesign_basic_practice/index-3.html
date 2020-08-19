@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Resume</title>
+        <meta name = "description" content = "Taemin Im's resume">
+        <link rel = "stylesheet" href = "style.css">
+        <!-- CSS 적용 방법 3가지 -->
+
+        <!-- CSS 파일을 읽어 들여 적용하기.
+        <link rel = "stylesheet" href = "style.css">
+        -->
+
+        <!-- HTML <head>내부에 <style> 태그를 넣어 직접 지정하기.
+        <style>
+            h1 { color : #f00; }
+            p { font-size : 18px; }
+        </style>
+        -->
+
+        <!-- 각각의 태그 내부에 style 속성 지정하기.
+        <body>
+            <h1 style = "color : #f00;">Resume</h1>
+            <p style = "font-size : 18px;">Taemin Im's resume</p>
+        </body>
+        -->
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <body>
+        <h1>Resume</h1>
+        <p>Taemin Im</p>
+
+        <br>
+        <br>
+        <ul>
+            <li>HTML 기초</li>
+            <li>CSS 기초</li>
+            <li>디자인 기초</li>
+        </ul>
+
+        <br>
+        <ol>
+            <li>HTML 기초</li>
+            <li>CSS 기초</li>
+            <li>디자인 기초</li>
+        </ol>
+
+        <br>
+        <p>클래스를 지정하지 않으면 기본 CSS설정 값으로 출력됩니다.</p>
+        <p class = "blue">클래스를 지정해서 파란색으로 따로 설정해 보겠습니다.</p>
+        <p> ID를 지정하지 않으면 기본 CSS설정 값으로 출력됩니다.</p>
+        <p id = "orange">ID를 지정해서 주황색으로 따로 설정해 보겠습니다.</p>
+
+        <!-- id를 사용한 페이지 내부 링크 작성 -->
+        <a href = "#contents">콘텐츠 보기</a>
+
+        <div id = "contents">
+            <p>여기로 이동합니다.</p>
+        </div>
+    </body>
+
+
+
+</html>
